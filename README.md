@@ -12,3 +12,6 @@ Run:
 2. npm install
 3. node server.js
 4. Open http://localhost:3000
+
+screenshot:
+![Uploading image.png…]()
