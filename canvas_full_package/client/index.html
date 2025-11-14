@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Collaborative Canvas - Upgraded</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="toolbar">
+    <select id="tool">
+      <option value="brush">Brush</option>
+      <option value="eraser">Eraser</option>
+      <option value="rectangle">Rectangle</option>
+      <option value="circle">Circle</option>
+    </select>
+    <input id="color" type="color" value="#000000"/>
+    <input id="width" type="range" min="1" max="60" value="4"/>
+    <button id="undo">Undo (per-user)</button>
+    <button id="redo">Redo</button>
+    <input id="room" placeholder="room id" value="default"/>
+    <button id="join">Join Room</button>
+    <span id="status">Not connected</span>
+    <div id="users"></div>
+  </div>
+
+  <div id="canvasWrap">
+    <canvas id="main"></canvas>
+    <canvas id="overlay"></canvas>
+  </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="websocket.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>

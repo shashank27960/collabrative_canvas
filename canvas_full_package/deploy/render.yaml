@@ -1,0 +1,9 @@
+# Render service definition (example)
+services:
+  - type: web
+    name: collaborative-canvas-upgraded
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/server.js
+    autoDeploy: true
