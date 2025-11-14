@@ -14,4 +14,5 @@ Run:
 4. Open http://localhost:3000
 
 screenshot:
-![Uploading image.png…]()
+<img width="1767" height="868" alt="image" src="https://github.com/user-attachments/assets/1a2cf91a-fbd0-4b2d-aa19-27625810db1f" />
+
